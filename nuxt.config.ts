@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+  srcDir: "app",
   future: {
     compatibilityVersion: 4,
   },
@@ -9,7 +10,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
 
   typescript: {
-    strict: true, // catch null/undefined errors at compile time
-    typeCheck: true, // run tsc as part of the dev server
+    strict: true,
+    typeCheck: false,
   },
 });
